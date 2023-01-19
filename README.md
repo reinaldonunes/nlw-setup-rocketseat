@@ -16,8 +16,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React.js](https://pt-br.reactjs.org/)
 - [Node.js](https://nodejs.org/en/)
-- [Prima ORM](https://www.prisma.io/)
+- [Prisma ORM](https://www.prisma.io/)
 - [Fastify](https://www.fastify.io/)
+- [Expo](https://expo.dev/)
+- [Zod](https://zod.dev/)
+- [Vite](https://vitejs.dev/)
 
 ## 💻 Projeto
 
