@@ -1,4 +1,5 @@
 import dayjs from "dayjs"
+import { api } from "../lib/axios"
 import { useEffect, useState } from "react"
 import { generateDatesFromYearBeginning } from "../utils/generate-dates-from-year-beginning"
 import { HabitDay } from "./HabitDay"

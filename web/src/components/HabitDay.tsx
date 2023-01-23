@@ -14,7 +14,7 @@ interface HabitProps {
 export function HabitDay({ completed = 0, amount = 0, date }:HabitProps){
   const completedPercentage = amount > 0 ? Math.round((completed / amount) * 100) : 0
 
-  const dayAndMonth = dayjs().format('DD/MM')
+  const dayAndMonth = dayjs(date).format('DD/MM')
   const dayOfWeek = dayjs(date).format('dddd')
 
   return (
