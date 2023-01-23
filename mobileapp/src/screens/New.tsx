@@ -63,7 +63,7 @@ export function New(){
                 }
 
                 <TouchableOpacity
-                    className="w-full h-14 flex-row itmes-center justify-center bg-green-600 rounded-md mt-6"
+                    className="w-full h-16 flex-row items-center justify-center bg-green-600 rounded-md mt-5"
                     activeOpacity={0.7}
                 >
                     <Feather

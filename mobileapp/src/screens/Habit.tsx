@@ -1,7 +1,7 @@
+import dayjs from "dayjs";
 import { View, ScrollView, Text } from "react-native";
 import { useRoute } from '@react-navigation/native'
 import { BackButton } from "../components/BackButton";
-import dayjs from "dayjs";
 import { ProgressBar } from "../components/ProgressBar";
 import { CheckBox } from "../components/CheckBox";
 
@@ -46,7 +46,7 @@ export function Habit(){
                 <View className="mt-6">
                     <CheckBox 
                         title="Beber água"
-                        checked={true}
+                        checked={false}
                     />
                 </View>
         </ScrollView>        
