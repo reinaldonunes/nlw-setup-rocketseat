@@ -60,7 +60,7 @@ export function NewHabitForm(){
                 autoFocus
                 value={title}
                 onChange={event => setTitle(event.target.value) }
-                className="p-4 rounded-lg mt-3 mb-1 bg-zinc-800 text-white placeholder:text-zinc-400"
+                className="p-4 rounded-lg mt-3 mb-1 bg-zinc-800 text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-violet-800 focus:ring-offset-2 focus:ring-offset-zinc-900"
             />
             <label htmlFor="" className="mt-3 font-semibold leading-tight">
                 Qual a recorrência?
@@ -73,11 +73,11 @@ export function NewHabitForm(){
                              <Checkbox.Root
                                 key={weekDay}
                                 onCheckedChange={() => handleToggleWeekDay(index)}
-                                className="flex items-center gap-3 group"
+                                className="flex items-center gap-3 group focus:outline-none"
                                 checked={weekDays.includes(index)}
                                 >
                                     <div
-                                        className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500"
+                                        className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500 transition-colors group-focus:ring-2 group-focus:ring-violet-800 focus:ring-offset-2 focus:ring-offset-background"
                                     >
                                         <Checkbox.Indicator>
                                         <Check size={20} className="text-white" />
@@ -92,7 +92,9 @@ export function NewHabitForm(){
                 }
             </div>
 
-            <button type="submit" className="mt-4 rounded-lg font-semibold gap-3 bg-green-600 hover:bg-green-500 flex justify-center items-center p-4">
+            <button
+                type="submit"
+                className="mt-4 rounded-lg font-semibold gap-3 bg-green-600 hover:bg-green-500 flex justify-center items-center p-4 transition-colors focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 focus:ring-offset-zinc-900">
                 <Check size={20} weight="bold" />
                 Confirmar
             </button>
